@@ -1,0 +1,180 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+select {
+  padding: 5px;
+}
+
+button {
+  padding: 6px 12px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: #f8f9fb;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 14px;
+  color: #666;
+}
+
+.card p {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.badge {
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.new {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.contacted {
+  background: #fff3e0;
+  color: #ef6c00;
+}
+
+.converted {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.notes-panel {
+  position: fixed;
+  right: 20px;
+  top: 80px;
+  width: 320px;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 14px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+.notes-list {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.note {
+  background: #f4f6f8;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+}
+
+.note small {
+  color: #777;
+  font-size: 11px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 60px;
+  border-radius: 8px;
+  padding: 8px;
+  margin-top: 8px;
+}
+
+button {
+  margin-top: 8px;
+}
+
+button.close {
+  background: transparent;
+  color: #888;
+}
